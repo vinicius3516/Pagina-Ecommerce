@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62, 5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0 10rem;
+  padding: 0 5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #b7b7b7;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
+.carrinho {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.imgAvatar {
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+.iconeCar {
+  cursor: pointer;
+  width: 1.6rem;
+}
+
+.qntItemCar{
+  position: absolute;
+  margin-top: -5px;
+  color: rgba(255, 0, 0, 0.739);
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+
+  & h2 {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  & ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+
+    & li {
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+}
+
+/* Main */
+
+.containerHomer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 4rem;
+  /* display: none; */
+}
+
+.imgProduto {
+  max-width: 480px;
+}
+
+.imgPrincipal.Ativa {
+  width: 30rem;
+  border: 1px solid #b7b7b7;
+  border-radius: 2rem;
+}
+
+.container-opcao {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.opcao {
+  width: 6rem;
+  border: 1px solid #b7b7b7;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.open {
+  border: 2.5px solid rgb(0, 0, 0);
+  opacity: 0.6;
+}
+
+.infoProduto {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: start;
+  margin-left: 4rem;
+  margin-bottom: 9rem;
+
+  & .v1 {
+    background-color: #535353;
+    color: #fdfdfd;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-weight: 400;
+  }
+}
+
+.descricao {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  line-height: 1.5rem;
+}
+
+.Princ {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 2.5rem;
+}
+
+.valor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  & p {
+    background-color: #535353;
+    color: #fdfdfd;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-weight: 400;
+  }
+}
+
+.valor span {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.containerAdd {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+#length {
+  background-color: #dddddd;
+  font-weight: 600;
+  width: 4rem;
+  padding: 0.5rem;
+  border: 3px solid #535353;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.addCar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  min-width: 20rem;
+  background-color: #dddddd;
+  border: 3px solid #535353;
+  padding: 0.4rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  min-width: 20rem;
+  background-color: #dddddd;
+  border: 3px solid #535353;
+  padding: 0.4rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  /* margin-bottom: 1rem; */
+}
+
+.voltHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  min-width: 20rem;
+  background-color: #dddddd;
+  border: 3px solid #535353;
+  padding: 0.4rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.carHomeVazio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #b7b7b7;
+  border-radius: 2rem;
+  padding: 3rem;
+  gap: 5rem;
+  display: none;
+
+  & span {
+    background-color: #dddddd;
+    border: 3px solid #535353;
+    padding: 0.4rem 3rem;
+    cursor: pointer;
+  }
+  & p {
+    font-size: 3rem;
+  }
+}
+
+.carHomeItem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #b7b7b7;
+  border-radius: 2rem;
+  padding: 2.5rem;
+  gap: 3rem;
+  display: none;
+
+  & img {
+    width: 30rem;
+    border: 1px solid #b7b7b7;
+    border-radius: 2rem;
+  }
+}
+
+.descriCar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
